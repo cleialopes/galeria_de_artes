@@ -1,7 +1,8 @@
+// Manejador de eventos para los botones "Agregar al Carrito"
 let slideIndex = 0;
-    function moveSlide(n) {
-    const slides = document.querySelector('.carousel-slide');
-    const totalSlides = slides.children.length;
+function moveSlide(n) {
+const slides = document.querySelector('.carousel-slide');
+const totalSlides = slides.children.length;
     slideIndex = (slideIndex + n + totalSlides) % totalSlides;
     slides.style.transform = `translateX(${-slideIndex * (100 / totalSlides)}%)`; // Ajusta el desplazamiento
     }

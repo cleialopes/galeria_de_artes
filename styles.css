@@ -64,7 +64,7 @@ nav ul li.cart i {
 
 /* Contenedor con moldura */
 .content {
-    border: 10px solid #6a0dad; /* Borde morado */
+    border: 15px solid #6a0dad; /* Borde morado */
     padding: 20px;
     max-width: 80%; /* Ocupa el 80% de la pantalla */
     margin: 0 auto; /* Centra el contenedor */
@@ -74,9 +74,10 @@ nav ul li.cart i {
 .carousel-container {
     position: relative;
     max-width: 80%; /* Ocupa el 80% de la pantalla */
+    height: 500px;
     margin: auto;
     overflow: hidden;
-    border: 2px solid #6a0dad; /* Borde morado */
+    border: 5px solid #6a0dad; /* Borde morado */
 }
 
 .carousel-slide {
@@ -86,8 +87,7 @@ nav ul li.cart i {
 }
 
 .carousel-slide img {
-    width: 100%;
-    height: auto; /* Ajusta la altura automáticamente */
+    width: 400px;
     object-fit: cover; /* Mantiene la relación de aspecto y cubre el área */
     transition: transform 0.3s ease; /* Transición suave para el zoom */
 }
@@ -119,22 +119,22 @@ nav ul li.cart i {
     right: 0;
 }
 
-/* Sección de galería */
-.gallery-section {
+/* Sección del artista */
+.artista-section {
     padding: 2em;
     text-align: center;
 }
 
-.gallery-item {
+.artista-item {
     margin: 1em;
     display: inline-block;
     justify-items: center;
     width: calc(33.333% - 2em);
 }
 
-.gallery-item img {
-    width: 50%;
-    height: auto;
+.artista-item img {
+    width: auto;
+    height: 250px;
     display: block;
     border: 2px solid #6a0dad; /* Borde morado */
 }
@@ -224,20 +224,19 @@ footer a:hover {
 }
 /* Estilos de la sección de animación vertical */
 .horizontal-animation {
-    overflow: hidden; /* Oculta cualquier contenido que salga del área visible */
+    overflow: hidden;
     background-color: #000;
-    padding: 2em 0;
+    padding: 0; /* Sin espacio alrededor para que ocupe toda la pantalla */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 400px; /* Ajuste opcional para limitar el área de animación vertical */
+    height: 30vh; /* Ocupa toda la altura de la pantalla */
 }
 
 .animated-image {
-    width: 800px;
-    animation: slide-vertical 10s linear infinite; /* Animación en sentido vertical */
-    border: 2px solid #6a0dad;
-    border-radius: 10px;
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    height: outo; /* Ajusta la altura a 70% de la pantalla */
+    animation: slide-vertical 30s linear infinite; /* Animación en sentido vertical */
 }
 
 /* Definición de la animación vertical */
