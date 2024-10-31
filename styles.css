@@ -12,8 +12,10 @@ h1 {
 }
 /* Estilos del Header */
 header {
-    background-color: #6a0dad; /* Morado */
-    color: #fff;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #6a0dad;
     padding: 1em;
     text-align: center;
     position: relative;
@@ -22,14 +24,19 @@ header {
 header h1 {
     margin: 0;
 }
+header img {
+    width: 300px;
+    border-radius: 50%;
+}
 
 nav {
+   
     margin-top: 1em;
 }
 
 nav ul {
     list-style-type: none;
-    padding: 0;
+    padding: 20px;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -57,14 +64,8 @@ nav ul li.cart a {
     display: flex;
     align-items: center;
 }
-
-nav ul li.cart i {
-    margin-right: 5px; /* Espacio entre el icono y el texto */
-}
-
-/* Contenedor con moldura */
-.content {
-    border: 15px solid #6a0dad; /* Borde morado */
+.content { /* Contenedor con moldura */
+    border: 15px solid #6a0dad;
     padding: 20px;
     max-width: 80%; /* Ocupa el 80% de la pantalla */
     margin: 0 auto; /* Centra el contenedor */
@@ -120,28 +121,38 @@ nav ul li.cart i {
 }
 
 /* Sección del artista */
+section {
+display: flex;
+flex-direction: column;
+}
 .artista-section {
     padding: 2em;
     text-align: center;
 }
-
 .artista-item {
     margin: 1em;
     display: inline-block;
     justify-items: center;
     width: calc(33.333% - 2em);
 }
-
+.artista {
+    display: flex;
+    flex-direction: row;
+}
+.foto_artista {
+    display: flex;
+    flex-direction: column;
+}
 .artista-item img {
-    width: auto;
+    padding: 5px;
+    width: 250px;
     height: 250px;
-    display: block;
-    border: 2px solid #6a0dad; /* Borde morado */
+    border: 2px solid #6a0dad;
 }
 
-/* Estilos del Footer */
+
 footer {
-    background-color: #6a0dad; /* Morado */
+    background-color: #6a0dad;/* Estilos del Footer */
     color: #fff;
     padding: 1em;
     text-align: center;
