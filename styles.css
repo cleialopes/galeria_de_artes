@@ -1,0 +1,254 @@
+/* Estilos del body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+}
+
+h1 {
+    text-align: center;
+}
+/* Estilos del Header */
+header {
+    background-color: #6a0dad; /* Morado */
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul li.cart {
+    position: relative;
+}
+
+nav ul li.cart a {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li.cart i {
+    margin-right: 5px; /* Espacio entre el icono y el texto */
+}
+
+/* Contenedor con moldura */
+.content {
+    border: 10px solid #6a0dad; /* Borde morado */
+    padding: 20px;
+    max-width: 80%; /* Ocupa el 80% de la pantalla */
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+/* Estilos del Carrusel */
+.carousel-container {
+    position: relative;
+    max-width: 80%; /* Ocupa el 80% de la pantalla */
+    margin: auto;
+    overflow: hidden;
+    border: 2px solid #6a0dad; /* Borde morado */
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: calc(100% * 6); /* Cambia según el número de imágenes */
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto; /* Ajusta la altura automáticamente */
+    object-fit: cover; /* Mantiene la relación de aspecto y cubre el área */
+    transition: transform 0.3s ease; /* Transición suave para el zoom */
+}
+
+/* Efecto de zoom al pasar el ratón */
+.carousel-slide img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen al 110% */
+}
+
+/* Botones de control del carrusel */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.3s;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+/* Sección de galería */
+.gallery-section {
+    padding: 2em;
+    text-align: center;
+}
+
+.gallery-item {
+    margin: 1em;
+    display: inline-block;
+    justify-items: center;
+    width: calc(33.333% - 2em);
+}
+
+.gallery-item img {
+    width: 50%;
+    height: auto;
+    display: block;
+    border: 2px solid #6a0dad; /* Borde morado */
+}
+
+/* Estilos del Footer */
+footer {
+    background-color: #6a0dad; /* Morado */
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos de la sección de Tienda */
+.shop-section {
+    padding: 2em;
+    text-align: center;
+}
+
+.shop-items {
+    display: grid; /* Cambiado a grid */
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas de igual tamaño */
+    gap: 1em; /* Espacio entre las tarjetas */
+}
+
+.shop-item {
+    background-color: #333; /* Fondo oscuro para los elementos de la tienda */
+    border: 2px solid #6a0dad; /* Borde morado */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 1em;
+    transition: transform 0.3s ease; /* Transición suave para el hover */
+}
+
+.shop-item img {
+    width: 100%; /* Imagen ocupa todo el ancho del contenedor */
+    border-radius: 8px 8px 0 0; /* Bordes redondeados en la parte superior */
+}
+
+.shop-item h3 {
+    margin: 0.5em 0;
+}
+
+.shop-item button {
+    background-color: #6a0dad; /* Botón morado */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+.shop-item button:hover {
+    background-color: #5b0a9c; /* Cambio de color al pasar el ratón */
+}
+
+/* Efecto de zoom en los elementos de la tienda */
+.shop-item:hover {
+    transform: scale(1.05); /* Aumenta el tamaño de la tarjeta al 105% */
+}
+
+/* Responsividad */
+@media (max-width: 1200px) {
+    .shop-items {
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 900px) {
+    .shop-items {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 600px) {
+    .shop-items {
+        grid-template-columns: 1fr; /* 1 columna en pantallas muy pequeñas */
+    }
+}
+/* Estilos de la sección de animación vertical */
+.horizontal-animation {
+    overflow: hidden; /* Oculta cualquier contenido que salga del área visible */
+    background-color: #000;
+    padding: 2em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px; /* Ajuste opcional para limitar el área de animación vertical */
+}
+
+.animated-image {
+    width: 800px;
+    animation: slide-vertical 10s linear infinite; /* Animación en sentido vertical */
+    border: 2px solid #6a0dad;
+    border-radius: 10px;
+}
+
+/* Definición de la animación vertical */
+@keyframes slide-vertical {
+    0% {
+        transform: translateY(-100%); /* Empieza fuera de la pantalla arriba */
+    }
+    50% {
+        transform: translateY(100%); /* Mueve la imagen hacia fuera de la pantalla abajo */
+    }
+    100% {
+        transform: translateY(-100%); /* Regresa a la posición inicial */
+    }
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galería de Arte</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Galería de Arte</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="tienda.html">Tienda</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li class="cart"><a href="#cart"><i class="fas fa-shopping-cart"></i> Carrito</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="horizontal-animation">
+      <img src="img/image1.webp" alt="Galería de Arte" class="animated-image">
+    </div>
+
+    <div class="content">
+        <h1>Galeria de fotos</h1>
+      <!-- Contenedor con moldura -->
+      <!-- Carrusel de imágenes -->
+      <div class="carousel-container">
+        <div class="carousel-slide">
+          <img src="https://via.placeholder.com/800x400?text=Obra+1" alt="Obra 1"/>
+          <img src="https://via.placeholder.com/800x400?text=Obra+2" alt="Obra 2"/>
+          <img src="https://via.placeholder.com/800x400?text=Obra+3" alt="Obra 3"/>
+          <!-- Repetir las imágenes para el efecto infinito -->
+          <img src="https://via.placeholder.com/800x400?text=Obra+1" alt="Obra 1"/>
+          <img src="https://via.placeholder.com/800x400?text=Obra+2" alt="Obra 2"/>
+          <img src="https://via.placeholder.com/800x400?text=Obra+3" alt="Obra 3"/>
+        </div>
+        <a class="prev" onclick="moveSlide(-1)">❮</a>
+        <a class="next" onclick="moveSlide(1)">❯</a>
+      </div>
+
+      <!-- Sección de galería -->
+      <section class="gallery-section" id="inicio">
+        <h2>El Artista</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque fugit
+          aliquid dolore laborum eum, quaerat, beatae veniam recusandae
+          similique, est doloribus voluptate soluta? Odit est ipsam optio quam,
+          dignissimos quo. Non sit quisquam eius ducimus, autem amet magni
+          repellendus voluptatem, deserunt ullam possimus consequatur sapiente,
+          eligendi fugiat labore officiis fuga fugit eveniet voluptates minima
+          rem veritatis deleniti nam explicabo? Inventore! Quidem sapiente,
+          possimus omnis atque voluptatibus repudiandae! Nihil iure nostrum
+          dolorem eveniet quas earum quam minima vitae beatae sunt numquam
+          inventore, dicta iusto quod. Quia ullam voluptas placeat rem saepe.
+          Ducimus veniam similique, ipsa illum maxime necessitatibus accusantium
+          perspiciatis deleniti? Odit iure sapiente optio. Labore laudantium ut
+          illo magni quod quidem consectetur illum nam hic! Perferendis at sequi
+          excepturi unde. Veritatis nam molestias obcaecati fuga ducimus,
+          accusantium, dolores rem illo sed adipisci corrupti cumque numquam,
+          sapiente pariatur voluptas. Quos impedit in eos blanditiis veritatis
+          odio sunt dolor quam doloribus! Adipisci? Cum necessitatibus quisquam
+          nam voluptates, quo voluptate ratione corrupti nobis voluptatum ab
+          repellendus exercitationem enim assumenda doloremque magnam illo vel.
+          Dicta voluptatem fugit, vero dolore asperiores accusantium placeat
+          officia maiores! Impedit quas expedita doloribus libero sapiente
+          recusandae nobis laboriosam exercitationem totam quasi illum dolore
+          ullam asperiores dolor minus culpa voluptatem, neque voluptatum
+          tempora dolorem harum veritatis dicta, non itaque. Officiis. Earum
+          ipsum soluta fuga adipisci iste sequi est mollitia dolorum! Eveniet
+          nesciunt earum possimus aliquam, quo corrupti corporis minus
+          aspernatur consectetur! Vel distinctio itaque possimus dicta deserunt
+          sunt officia praesentium. Inventore facilis assumenda culpa
+          repellendus. Aut suscipit voluptatum vitae. Reiciendis autem rerum
+          vero libero molestiae est consequatur consequuntur, aliquam quisquam
+          architecto nam, incidunt quia quae iste? Placeat error aliquid libero.
+          Quaerat placeat esse unde nemo voluptatibus deserunt aperiam rerum
+          suscipit iste adipisci delectus accusamus dolorem est laudantium quae
+          architecto, minima cumque velit dignissimos molestias odit laborum
+          quibusdam odio. Provident, necessitatibus.
+        </p>
+        <div class="gallery-item">
+          <img src="img/artista1.jpg" alt="Obra A" />
+        </div>
+        <div class="gallery-item">
+          <img src="img/artista2.jpg" alt="Obra B" />
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contacto">
+      <p>&copy; 2023 Galería de Arte | Todos los derechos reservados</p>
+      <p>
+        <a href="mailto:contacto@galleria.com">Contacto</a> |
+        <a href="#">Facebook</a> | <a href="#">Instagram</a> |
+        <a href="#">Twitter</a>
+      </p>
+    </footer>
+  </body>
+</html>
