@@ -22,6 +22,7 @@ body {
 h1, h2 {
     font-family: 'titulo';
     text-align: center;
+    font-size: 30px;
 }
 /* Estilos del Header */
 header {
@@ -86,7 +87,7 @@ nav ul li.cart a {
 .carousel-container { /* Estilos del Carrusel */
     position: relative;
     max-width: 80%; /* Ocupa el 80% de la pantalla */
-    height: 500px;
+    height: 300px;
     margin: auto;
     overflow: hidden;
     border: 5px solid #6a0dad; /* Borde morado */
@@ -99,7 +100,7 @@ nav ul li.cart a {
 }
 
 .carousel-slide img {
-    width: 400px;
+    width: 230px;
     object-fit: cover; /* Mantiene la relación de aspecto y cubre el área */
     transition: transform 0.3s ease; /* Transición suave para el zoom */
 }
@@ -142,9 +143,12 @@ flex-direction: column;
 }
 .artista-item {
     margin: 1em;
-    display: inline-block;
-    justify-items: center;
-    width: calc(33.333% - 2em);
+}
+.artista p{
+display: block;
+text-align: justify;
+padding: 0px 50px;
+font-size: 30px;
 }
 .artista {
     display: flex;
@@ -156,8 +160,8 @@ flex-direction: column;
 }
 .artista-item img {
     padding: 5px;
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
     border: 2px solid #6a0dad;
 }
 
@@ -165,8 +169,9 @@ flex-direction: column;
 footer {
     background-color: #6a0dad;/* Estilos del Footer */
     color: #fff;
-    padding: 1em;
+    padding: 0.5em;
     text-align: center;
+    font-size: 20px;
 }
 
 footer a {
