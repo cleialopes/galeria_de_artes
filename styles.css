@@ -1,13 +1,26 @@
+@font-face {
+    font-family: 'textos';
+    src: url('font/A_DAY_WITHOUT_SUN.otf') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+    font-family: 'titulo';
+    src: url('font/bobby_jones_soft_condensed.otf') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
 /* Estilos del body */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'textos';
     margin: 0;
     padding: 0;
     background-color: #000; /* Fondo negro */
     color: #fff; /* Texto blanco */
 }
 
-h1 {
+h1, h2 {
+    font-family: 'titulo';
     text-align: center;
 }
 /* Estilos del Header */
@@ -70,9 +83,7 @@ nav ul li.cart a {
     max-width: 80%; /* Ocupa el 80% de la pantalla */
     margin: 0 auto; /* Centra el contenedor */
 }
-
-/* Estilos del Carrusel */
-.carousel-container {
+.carousel-container { /* Estilos del Carrusel */
     position: relative;
     max-width: 80%; /* Ocupa el 80% de la pantalla */
     height: 500px;
