@@ -26,9 +26,9 @@ h1, h2 {
 }
 /* Estilos del Header */
 header {
+    display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     background-color: #6a0dad;
     padding: 1em;
     text-align: center;
@@ -39,7 +39,7 @@ header h1 {
     margin: 0;
 }
 header img {
-    width: 300px;
+    width: 150px;
     border-radius: 50%;
 }
 
@@ -134,8 +134,8 @@ nav ul li.cart a {
 
 /* Sección del artista */
 section {
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 .artista-section {
     padding: 2em;
@@ -145,10 +145,10 @@ flex-direction: column;
     margin: 1em;
 }
 .artista p{
-display: block;
-text-align: justify;
-padding: 0px 50px;
-font-size: 30px;
+    display: block;
+    text-align: justify;
+    padding: 0px 50px;
+    font-size: 30px;
 }
 .artista {
     display: flex;
