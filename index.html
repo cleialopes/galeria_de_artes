@@ -14,22 +14,21 @@
         <img src="img/logo.jpg" alt="logo">
       </div>
       <nav>
-        <h1>Galería de Arte</h1>
         <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="tienda.html">Tienda</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-          <li><a href="#" class="cart" onclick="showCart()">🛒 Carrito (<span id="cart-count">0</span>)</a></li>
+          <li><a href="index.html">Inicios</a></li>
+          <li><a href="tienda.html">Creaciónes</a></li>
+          <li><a href="#contacto">Oersonalizaciónes</a></li>
+          <li><a href="#contacto">Blog</a></li>
+          <li><a href="index.html">Sobre Mi</a></li>
+          <li><a href="#" class="cart" onclick="showCart()">🛒(<span id="cart-count">0</span>)</a></li>
       </nav>
     </header>
     <div class="horizontal-animation">
-      <img src="img/obra3.jpg" alt="Galería de Arte" class="animated-image">
+      <h2>animacion</h2>
     </div>
     <div class="content">
-        <h1>La tinta rebelde que reinventa el arte</h1>
-        <!-- Contenedor con moldura -->
-        <!-- Carrusel de imágenes -->
-        <div class="carousel-container">
+      <h1>La tinta rebelde que reinventa el arte</h1><!-- Contenedor con moldura -->
+      <div class="carousel-container"><!-- Carrusel de imágenes -->
         <div class="carousel-slide">
           <img src="img/obra1.jpg" alt="Obra 1"/>
           <img src="img/obra2.jpg" alt="Obra 2"/>
@@ -46,15 +45,31 @@
           <img src="img/obra4.jpg" alt="Obra 4"/>
           <img src="img/obra5.jpg" alt="Obra 5"/>
         </div>
-        <a class="prev" onclick="moveSlide(-1)">❮</a>
-        <a class="next" onclick="moveSlide(1)">❯</a>
+          <a class="prev" onclick="moveSlide(-1)">❮</a>
+          <a class="next" onclick="moveSlide(1)">❯</a>
       </div>
       <div>
         <p>"No nos interesan las etiquetas. Somos arte en su forma más pura, libre de límites y lleno de caos. 
-          Aquí, rompemos las reglas, los moldes y cualquier idea preconcebida sobre lo que es 'bonito'. Si te gusta lo 
-          alternativo, lo subversivo y lo que otros temen crear, bienvenido a nuestro universo. No nos disculpamos por ser diferentes, 
-          nos celebramos por ello."</p>
+            Aquí, rompemos las reglas, los moldes y cualquier idea preconcebida sobre lo que es 'bonito'. Si te gusta lo 
+            alternativo, lo subversivo y lo que otros temen crear, bienvenido a nuestro universo. No nos disculpamos por ser diferentes, 
+            nos celebramos por ello."</p>
       </div>
+      <section class="banner">
+        <div class="primero">
+          <div>
+            <h2>ILUSTRACIÓN COM DISPOSITIVO</h2>
+            <h2>ARTE TRADICIONAL Y DIGITAL</h2>
+            <h2 class="color">ASOMBRATE CON NUESTRA OBRAS Y CREA LA TUYA</h2>
+          </div>
+            <img src="img/banner2.png" alt="banner1">
+        </div>  
+        <div class="segundo">
+          <img src="img/banner3.png" alt="banner2">
+          <p>En nuestro estudio, ofrecemos una variedade de servicios y productos que reflejan nuestra filosofia artistica rebelde y alternativa. 
+          cada pieza y servicio esta guiado por nuestro espírito de romper moldes y desafiar lo convencional. Nos especializamos en crear arte
+          que no solo decora, sino que también provoca `pensamientos y emociones profundas. </p>
+        </div>
+      </section>
       <h2>El Espíritu Rebelde Detrás del Arte</h2>
       <section class="artista"> <!-- Sección del artista -->
         <div class="foto_artista">
@@ -71,37 +86,41 @@
           Soy un espíritu subversivo, apasionada por el arte y dedicada a explorar lo inesperado a través de 
           trazos y tinta. Mi trabajo es crear obras con propósito que te inviten a cuestionar y conecten con tu alma desde lo 
           profundo, marcados por una tinta rebelde representado los estilos ocultos de la sociedad. Busco transmitir mensajes de
-           temas que casi siempre se mantienen en las sombras con una mirada crítica y curiosa, siempre buscando nuevas 
-           maneras de contar historias visuales.
+          temas que casi siempre se mantienen en las sombras con una mirada crítica y curiosa, siempre buscando nuevas 
+          maneras de contar historias visuales.
         </p>
       </section>
-     <div class="banner">
-      <div class="primara">
-        <div>
-        <h2>ILUSTRACIÓN COM DISPOSITIVO</h2>
-        <h2>ARTE TRADICIONAL Y DIGITAL</h2>
-        <h2 class="color">ASOMBRATE CON NUESTRA OBRAS Y CREA LA TUYA</h2>
-      </div>
-        <img src="img/banner2.png" alt="banner1">
-      </div>
-        <div class="segunda">
-          <img src="img/banner3.png" alt="banner2">
-          <p>En nuestro estudio, ofrecemos una variedade de servicios y productos que reflejan nuestra filosofia artistica rebelde y alternativa. 
-          cada pieza y servicio esta guiado por nuestro espírito de romper moldes y desafiar lo convencional. Nos especializamos en crear arte
-          que no solo decora, sino que también provoca `pensamientos y emociones profundas. </p>
+      <div class="formulario">
+        <div class="form-container">
+          <span>No hemos podido validar su suscripción.</span>
+          <span>Se ha realizado su suscripción.</span>
+          <form><!-- Contenedor del formulario -->
+            <h2>¡Únete a la Revolución Artística!</h2>
+            <p>Notas del más allá...</p>    
+            <p>¿Listo para sumergirte en un mundo de arte subversivo y pensamientos provocadores? Suscríbete a nuestro 
+            newsletter y sé parte de una comunidad que desafía los límites del arte convencional.</p>        
+            <label for="email">Introduce tu email para suscribirte*</label>
+            <div class="form-input"><!-- Campo de email -->
+            <input type="email" id="email" name="EMAIL" placeholder="Correo electrónico" required>   
+          </div>  
+          <div><!-- Checkbox de aceptación -->
+            <label><input type="checkbox" id="opt_in" name="OPT_IN" required>Acepto las condiciones y recibir sus newsletters.</label>       
+          </div>
+            <button type="submit" class="submit-button">SUSCRIBIRSE</button> <!-- Botón de envío -->
+          </form>
         </div>
       </div>
-      </div>
+    </div>
     <footer id="contacto"> <!-- Footer -->
       <p>&copy; 2024 Samaru Atelier d'Art | <a href="">Políticas de privacidad</a></p>
-      <p>
+      <div>
         <a href="samaru_art@gmail.com">Contacto</a> |
         <a href="https://es.pinterest.com/samaru_art_/">Pinterest</a> | 
         <a href="https://www.instagram.com/samaru_art_/ ">Instagram</a> |
         <a href="https://www.tiktok.com/@samaru_atelier">Tiktok</a> |
         <a href="">Aviso legal </a> |
         <a href="">Cookies </a>
-      </p>
+      </div>
     </footer>
   </body>
 </html>
