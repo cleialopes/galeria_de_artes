@@ -10,6 +10,25 @@
    font-weight: normal;
    font-style: normal;
 }
+@keyframes desplazarFondoHorizontal {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 100% 0;
+    }
+  }
+/* Estilos de la sección de animación */
+.horizontal-animation {
+    background-image: url(img/obra3.jpg);
+    width: 100%;
+    height: 100vh;
+    background-repeat: repeat-x;
+    background-size: cover;
+    animation: desplazarFondoHorizontal 15s linear infinite;
+}
+
+
 /* Estilos del body */
 body {
     flex-wrap: wrap;
@@ -108,8 +127,7 @@ nav ul li.cart a {
     object-fit: cover; /* Mantiene la relación de aspecto y cubre el área */
     transition: transform 0.3s ease; /* Transición suave para el zoom */
 }
-/* Efecto de zoom al pasar el ratón */
-.carousel-slide img:hover {
+.carousel-slide img:hover {/* Efecto de zoom al pasar el ratón */
     transform: scale(1.1); /* Aumenta el tamaño de la imagen al 110% */
 }
 .prev, .next {/* Botones de control del carrusel */
@@ -130,7 +148,6 @@ nav ul li.cart a {
 .next {
     right: 0;
 }
-
 section {/* Sección del artista */
     display: flex;
     flex-direction: column;
@@ -162,7 +179,6 @@ section {/* Sección del artista */
     height: 250px;
     border: 2px solid #6a0dad;
 }
-
 .banner {/* Sección del banner */
     display: flex;
     align-items: center;
@@ -194,11 +210,52 @@ section {/* Sección del artista */
     height: 350px;
     margin: 0 20px;
 }
-footer {
+
+.formulario { /* empieza el formulario */
+    display: flex;
+    background-image: url(img/obra3.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    height: 50%;
+    width: 100%;  
+}
+.form-container {
+    min-height: 20px; /* Altura mínima ajustable */
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Color negro con transparencia */
+    padding: 30px;
+    width: 300px;
+    border-radius: 8px;
+    color: #ffffff;
+ }
+.form-input input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+} 
+.submit-button {
+    background-color: #560077;
+    color: #FFFFFF;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.submit-button:hover {
+    background-color: #7200a1;
+}
+
+footer { /* empieza el Footer */
     justify-content: space-around;
     display: flex;
     flex-wrap: wrap;
-    background-color: #6a0dad;/* Estilos del Footer */
+    background-color: #6a0dad;
     color: #fff;
     padding: 1em;
     text-align: center;
@@ -253,61 +310,5 @@ footer a:hover {
 .shop-item:hover {
     transform: scale(1.05); /* Aumenta el tamaño de la tarjeta al 105% */
 }
-/* Estilos de la sección de animación vertical */
-.horizontal-animation {
-    background-image: url(img/obra3.jpg);
-    width: 100%;
-    height: 100vh;
-    background-repeat: repeat-x;
-    background-size: cover;
-    animation: desplazarFondoHorizontal 15s linear infinite;
-}
-/* Definición de la animación vertical */
-@keyframes desplazarFondoHorizontal {
-    0% {
-      background-position: 0 0;
-    }
-    100% {
-      background-position: 100% 0;
-    }
-  }
-  /* Estilos del formulario */
-.formulario {
-    display: flex;
-    background-image: url(img/obra3.jpg);
-    background-size: cover;
-    background-position: center;
-    justify-content: center;
-    height: 50%;
-    width: 100%;  
-}
-.form-container {
-    min-height: 20px; /* Altura mínima ajustable */
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.7); /* Color negro con transparencia */
-    padding: 30px;
-    width: 300px;
-    border-radius: 8px;
-    color: #ffffff;
- }
-.form-input input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-} 
-.submit-button {
-    background-color: #560077;
-    color: #FFFFFF;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-.submit-button:hover {
-    background-color: #7200a1;
-}
+
+  
