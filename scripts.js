@@ -16,3 +16,4 @@ button.addEventListener('click', () => {
     alert(`${itemName} ha sido agregado al carrito.`);
 });
 });
+

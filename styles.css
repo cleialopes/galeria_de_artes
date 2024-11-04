@@ -10,6 +10,7 @@
    font-weight: normal;
    font-style: normal;
 }
+
 @keyframes desplazarFondoHorizontal {
     0% {
       background-position: 0 0;
@@ -18,8 +19,7 @@
       background-position: 100% 0;
     }
   }
-/* Estilos de la sección de animación */
-.horizontal-animation {
+.horizontal-animation { /* sección de animación */
     background-image: url(img/obra3.jpg);
     width: 100%;
     height: 100vh;
@@ -28,8 +28,6 @@
     animation: desplazarFondoHorizontal 15s linear infinite;
 }
 
-
-/* Estilos del body */
 body {
     flex-wrap: wrap;
     font-family: 'textos';
@@ -39,13 +37,12 @@ body {
     color: #fff; /* Texto blanco */
     font-size: 28px;
 }
-
 h1, h2 {
     font-family: 'titulo';
     text-align: center;
 }
-/* Estilos del Header */
-header {
+
+header { /* empieza el Header */
     display: flex;
     justify-content: space-between;
     background-color: #6a0dad;
@@ -53,7 +50,6 @@ header {
     position: relative;
     font-size: 40px;
 }
-
 header h1 {
     margin: 0;
 }
@@ -66,11 +62,9 @@ header img {
   display: flex;
   align-items: center;  
 }
-
 nav {
     margin-top: 1em;
 }
-
 nav ul {
     list-style-type: none;
     padding: 20px;
@@ -78,7 +72,6 @@ nav ul {
     display: flex;
     justify-content: center;
 }
-
 nav ul li {
     margin: 0 15px;
 }
@@ -105,7 +98,7 @@ nav ul li.cart a {
 }
 .carousel-container { /* Estilos del Carrusel */
     position: relative;
-    max-width: 80%; /* Ocupa el 80% de la pantalla */
+    max-width: 80%;
     height: 500px;
     margin: auto;
     overflow: hidden;
@@ -120,12 +113,12 @@ nav ul li.cart a {
     border: 15px solid #6a0dad;
     padding: 20px;
     max-width: 80%; /* Ocupa el 80% de la pantalla */
-    margin: 20px auto; /* Centra el contenedor */
+    margin: 20px auto; 
 }
 .carousel-slide img {
     width: 400px;
-    object-fit: cover; /* Mantiene la relación de aspecto y cubre el área */
-    transition: transform 0.3s ease; /* Transición suave para el zoom */
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
 .carousel-slide img:hover {/* Efecto de zoom al pasar el ratón */
     transform: scale(1.1); /* Aumenta el tamaño de la imagen al 110% */
@@ -310,5 +303,21 @@ footer a:hover {
 .shop-item:hover {
     transform: scale(1.05); /* Aumenta el tamaño de la tarjeta al 105% */
 }
-
+#back-to-top {
+    position: fixed; /* Posiciona el enlace de forma fija */
+    bottom: 20px; /* Distancia desde el fondo de la pantalla */
+    right: 20px; /* Distancia desde el lado derecho de la pantalla */
+    padding: 5px 10px; /* Espaciado interno */
+    background-color: transparent; /* Fondo transparente */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    border: 2px solid #6a0dad; /* Borde morado */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    display: block; /* Muestra el enlace como bloque */
+    transition: background-color 0.3s ease; /* Transición suave para el fondo */
+    }
+#back-to-top:hover {
+    background-color: #7200a1; /* Color más oscuro al pasar el ratón */
+}
   
