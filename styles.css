@@ -11,21 +11,34 @@
    font-style: normal;
 }
 
-@keyframes desplazarFondoHorizontal {
+/* Definición de la animación vertical infinita */
+@keyframes slide-vertical {
     0% {
-      background-position: 0 0;
+        transform: translateY(-100%); /* Empieza fuera de la pantalla en la parte superior */
+    }
+    50% {
+        transform: translateY(100%); /* Baja hasta fuera de la pantalla en la parte inferior */
     }
     100% {
-      background-position: 100% 0;
+        transform: translateY(-100%); /* Regresa a la posición inicial en la parte superior */
     }
-  }
-.horizontal-animation { /* sección de animación */
-    background-image: url(img/obra3.jpg);
-    width: 100%;
+}
+/* Estilos de la sección de animación vertical */
+.horizontal-animation {
+    overflow: hidden;
+    background-color: #000;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
-    background-repeat: repeat-x;
-    background-size: cover;
-    animation: desplazarFondoHorizontal 15s linear infinite;
+}
+
+.animated-image {
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    height: 70vh; /* Ajusta la altura a 70% de la pantalla */
+    object-fit: cover; /* Ajuste de imagen para evitar distorsión */
+    animation: slide-vertical 10s linear infinite; /* Animación continua en sentido vertical */
 }
 
 body {
@@ -35,7 +48,6 @@ body {
     padding: 0;
     background-color: #000; /* Fondo negro */
     color: #fff; /* Texto blanco */
-    font-size: 28px;
 }
 h1, h2 {
     font-family: 'titulo';
