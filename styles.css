@@ -14,32 +14,32 @@
 /* Definición de la animación vertical infinita */
 @keyframes slide-vertical {
     0% {
-        transform: translateY(-100%); /* Empieza fuera de la pantalla en la parte superior */
+        transform: translateY(-100%); /* Empieza fuera de la pantalla arriba */
     }
     50% {
-        transform: translateY(100%); /* Baja hasta fuera de la pantalla en la parte inferior */
+        transform: translateY(100%); /* Mueve la imagen hacia fuera de la pantalla abajo */
     }
     100% {
-        transform: translateY(-100%); /* Regresa a la posición inicial en la parte superior */
+        transform: translateY(-100%); /* Regresa a la posición inicial */
     }
-}
+ }
 /* Estilos de la sección de animación vertical */
 .horizontal-animation {
     overflow: hidden;
     background-color: #000;
-    padding: 0;
+    padding: 0; /* Sin espacio alrededor para que ocupe toda la pantalla */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 30vh; /* Ocupa toda la altura de la pantalla */
 }
 
 .animated-image {
     width: 100%; /* Ocupa todo el ancho de la pantalla */
-    height: 70vh; /* Ajusta la altura a 70% de la pantalla */
-    object-fit: cover; /* Ajuste de imagen para evitar distorsión */
-    animation: slide-vertical 10s linear infinite; /* Animación continua en sentido vertical */
+    height: outo; /* Ajusta la altura a 70% de la pantalla */
+    animation: slide-vertical 30s linear infinite; /* Animación en sentido vertical */
 }
+
 
 body {
     flex-wrap: wrap;
