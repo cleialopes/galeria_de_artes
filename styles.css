@@ -216,45 +216,62 @@ section {/* Sección del artista */
     margin: 0 20px;
 }
 
-.formulario { /* empieza el formulario */
-    display: flex;
-    background-image: url(img/obra3.jpg);
-    background-size: cover;
-    background-position: center;
-    justify-content: center;
-    height: 50%;
-    width: 100%;  
-}
-.form-container {
-    min-height: 20px; /* Altura mínima ajustable */
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.7); /* Color negro con transparencia */
-    padding: 30px;
-    width: 300px;
-    border-radius: 8px;
-    color: #ffffff;
- }
-.form-input input {
+.form-container {    
+    max-width: 400px;
+    padding: 20px;
     width: 100%;
-    padding: 10px;
-    margin: 10px 0;
+    background-color: #222;
+    color: #fff;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .subheading {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 12px;
+  }
+  
+  input[type="email"] {
+    width: 100%;
+    margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 16px;
-} 
-.submit-button {
-    background-color: #560077;
-    color: #FFFFFF;
-    padding: 12px 24px;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1a73e8;
+    color: #fff;
     border: none;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-.submit-button:hover {
-    background-color: #7200a1;
-}
+  }
+  
+  button:hover {
+    background-color: #0f5bb5;
+  }
 
 footer { /* empieza el Footer */
     justify-content: space-around;
