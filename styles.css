@@ -1,46 +1,35 @@
 @font-face {
     font-family: 'textos';
     src: url('font/A_DAY_WITHOUT_SUN.otf') format('woff');
-   font-weight: normal;
-   font-style: normal;
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
     font-family: 'titulo';
     src: url('font/bobby_jones_soft_condensed.otf') format('woff');
-   font-weight: normal;
-   font-style: normal;
+    font-weight: normal;
+    font-style: normal;
 }
 
-/* Definición de la animación vertical infinita */
-@keyframes slide-vertical {
+/* Definición de la animación infinita */
+@keyframes background-move {
     0% {
-        transform: translateY(-100%); /* Empieza fuera de la pantalla arriba */
-    }
-    50% {
-        transform: translateY(100%); /* Mueve la imagen hacia fuera de la pantalla abajo */
+        background-position:0 0;
     }
     100% {
-        transform: translateY(-100%); /* Regresa a la posición inicial */
+        background-position: 100% 100%;
     }
- }
-/* Estilos de la sección de animación vertical */
+       }
+/* Estilos de la sección de animación */
 .horizontal-animation {
-    overflow: hidden;
-    background-color: #000;
-    padding: 0; /* Sin espacio alrededor para que ocupe toda la pantalla */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30vh; /* Ocupa toda la altura de la pantalla */
+    background-image: url(img/obra3.jpg);
+   background-size: cover;
+   background-position: center;
+   padding: 100px 0;
+   color: white;
+   text-align: center;
+   animation: background-move 20s linear infinite;
 }
-
-.animated-image {
-    width: 100%; /* Ocupa todo el ancho de la pantalla */
-    height: outo; /* Ajusta la altura a 70% de la pantalla */
-    animation: slide-vertical 30s linear infinite; /* Animación en sentido vertical */
-}
-
-
 body {
     flex-wrap: wrap;
     font-family: 'textos';
@@ -71,8 +60,8 @@ header img {
     border-radius: 50%;
 }
 .logo {
-  display: flex;
-  align-items: center;  
+    display: flex;
+    align-items: center;  
 }
 nav {
     margin-top: 1em;
@@ -216,14 +205,21 @@ section {/* Sección del artista */
     margin: 0 20px;
 }
 
-.form-container {    
+.form-container {    /* formulario */
+    display: flex;
+    flex-direction: column;
     max-width: 400px;
     padding: 20px;
     width: 100%;
+    margin: 0 30%;
     background-color: #222;
     color: #fff;
     border-radius: 8px;
     text-align: center;
+  }
+  .img-form {
+    background-image: url(img/obra3.jpg);
+    padding: 40px;
   }
   
   h1 {
