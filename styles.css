@@ -257,7 +257,7 @@ section {/* Sección del artista */
   button {
     width: 100%;
     padding: 10px;
-    background-color: #1a73e8;
+    background-color: #6a0dad;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -266,7 +266,7 @@ section {/* Sección del artista */
   }
   
   button:hover {
-    background-color: #0f5bb5;
+    background-color: #a855e3;
   }
 
 footer { /* empieza el Footer */
