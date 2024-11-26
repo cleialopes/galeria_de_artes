@@ -345,4 +345,93 @@ footer a:hover {
 #back-to-top:hover {
     background-color: #7200a1; /* Color más oscuro al pasar el ratón */
 }
+  /* Estilos para dispositivos pequeños (móviles) */
+@media (max-width: 768px) {
+    body {
+      font-size: 14px; /* Reducir tamaño de fuente */
+    }
+  
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    header img {
+      width: 200px; /* Ajustar tamaño del logo */
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+  
+    .carousel-container {
+      height: 300px; /* Reducir la altura del carrusel */
+    }
+  
+    .shop-items {
+      grid-template-columns: repeat(1, 1fr); /* Mostrar 1 columna */
+    }
+  
+    .banner {
+      flex-direction: column; /* Poner contenido en columnas */
+      text-align: center;
+    }
+  
+    .banner img {
+      width: 100%; /* Imagenes ocupan todo el ancho */
+      height: auto;
+    }
+  
+    .form-container {
+      width: 90%; /* Reducir el tamaño del formulario */
+      margin: 0 auto;
+    }
+  }
+  
+  /* Estilos para dispositivos medianos (tabletas) */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    body {
+      font-size: 16px; /* Ajustar tamaño de fuente */
+    }
+  
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    nav ul {
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    .carousel-container {
+      height: 400px; /* Ajustar altura del carrusel */
+    }
+  
+    .shop-items {
+      grid-template-columns: repeat(2, 1fr); /* Mostrar 2 columnas */
+    }
+  
+    .banner {
+      flex-direction: row; /* Mantener filas para tabletas */
+      flex-wrap: wrap; /* Permitir que los elementos se acomoden */
+      text-align: center;
+    }
+  
+    .banner img {
+      width: 80%;
+      height: auto;
+      margin: 10px auto;
+    }
+  
+    .form-container {
+      width: 80%; /* Reducir tamaño del formulario */
+      margin: 0 auto;
+    }
+  }
   
